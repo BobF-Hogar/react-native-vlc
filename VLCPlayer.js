@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, requireNativeComponent, View, Platform } from 'react-native';
 import PropTypes from 'prop-types';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
 
 export default class VLCPlayer extends Component {
@@ -237,7 +238,7 @@ VLCPlayer.propTypes = {
 	translateX: PropTypes.number,
 	translateY: PropTypes.number,
 	rotation: PropTypes.number,
-	...View.propTypes,
+	...ViewPropTypes,
 };
 
 const styles = StyleSheet.create({
